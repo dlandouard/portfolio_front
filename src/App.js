@@ -1,24 +1,23 @@
-import logo from './logo.svg';
+import React from 'react';
+import { Route, Switch } from 'react-router-dom';
+import MainPage  from './components/MainPage';
+import Admin  from './components/Admin';
 import './App.css';
+
+// const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className="App">
+      <Switch>
+        <Route exact path="/">
+          <MainPage />
+        </Route>
+        <Route path="/Admin">
+          <Admin />
+        </Route>
+      </Switch>
+    </main>
   );
 }
 
