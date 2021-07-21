@@ -1,0 +1,23 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-family: "Quicksand", sans-serif;
+  color: rgba(0, 255, 128, 0.616);
+}
+
+body {
+  background: url("./img/starnight.jpg") no-repeat center;
+  background-size: cover;
+}
+
+h1 {
+  font-family: "Press Start 2P", cursive;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+h2 {
+  font-family: "Amatic SC", cursive;
+  font-size: 2rem;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
