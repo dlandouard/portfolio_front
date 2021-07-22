@@ -8,9 +8,13 @@
     text-align: center;
 }
 
-.main_container img{
+.photo_bulle{
     width: 50%;
     border-radius: 50%;
+}
+
+.main_img {
+    width: 70%;
 }
 
 .main_section {

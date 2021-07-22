@@ -2,6 +2,7 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 import Nav from "./components/Nav";
 import MainPage from "./components/MainPage";
+import Project from "./components/Project"
 import Admin from "./components/Admin";
 import Footer from "./components/Footer";
 import "./App.css";
@@ -15,6 +16,9 @@ function App() {
       <Switch>
         <Route exact path="/">
           <MainPage />
+        </Route>
+        <Route path={'/projet/:id'}>
+          <Project />
         </Route>
         <Route path="/Admin">
           <Admin />

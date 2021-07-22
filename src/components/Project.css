@@ -1,0 +1,17 @@
+.projet_vues{
+    width: 100%;
+}
+
+.project_pics {
+    width: 90%;
+    padding: 1rem 0;
+}
+
+.project_pics_mobile {
+    max-height: 80vh;
+    padding: 1rem 0;
+}
+
+.arrow_icon {
+    width: 50%;
+}
