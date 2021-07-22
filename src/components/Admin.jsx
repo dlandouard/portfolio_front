@@ -45,7 +45,7 @@ function Admin() {
         .then((data) => data.data)
         .then((data) => {
           setFile({
-            filename: data.image,
+            filename: data.title,
           });
           setAlt("");
           setType("");
@@ -143,10 +143,11 @@ useEffect(() => {
             ))}
           </select>
           <button className="admin_button" type="submit">
-            Charger le fichier
+            Charger l'image
           </button>
           {file && (
             <img
+            className="admin_loadedImg"
               src={`${API_BASE_URL}/image/${file.filename}`}
               alt="fichier chargé"
             />

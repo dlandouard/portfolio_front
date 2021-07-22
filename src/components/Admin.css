@@ -4,6 +4,7 @@
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
+    padding-top: 3em;
    }
 
 .admin_title {
@@ -119,3 +120,7 @@
     transform: translateY(-100%);
   }
  
+.admin_loadedImg {
+  margin-top: 1em;
+  width: 100%;
+}

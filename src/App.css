@@ -6,8 +6,13 @@
   color: rgba(0, 255, 128, 0.616);
 }
 
+.App {
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
 body {
-  background: url("./img/starnight.jpg") no-repeat center;
+  background: url("./img/fondbleumarbré.jpg") no-repeat center;
   background-size: cover;
 }
 
