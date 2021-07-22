@@ -21,7 +21,7 @@ function MainPage() {
       <section className="main_section">
         <h1>Damien Landouard</h1>
         <h2>Développeur web fullstack ... ou presque</h2>
-        <img src={clindoeil} alt="Damien Landouard" className="photo_bulle"/>
+        <img src={clindoeil} alt="Damien Landouard" className="photo_bulle" />
         <div>
           <p>
             Bienvenue ! <br />
@@ -37,34 +37,42 @@ function MainPage() {
         </div>
       </section>
       <section className="main_section" id="Projets">
-        <h2>Mes projets</h2>
-        {projects
-          ?.filter((img) => img.type === "miniature")
-          .map((project, index) => (
-            <>
-              <a href={`/projet/${project.id}`} key={project.id} className="project_link">
-              <img
-                src={`${API_BASE_URL}/image/${project.imgTitle}`}
-                alt={project.alt}
-                className="main_img"
-              />
+        <h2>Les projets sur lesquels j'ai travaillé</h2>
+        <div className="projects_container">
+          {projects
+            ?.filter((img) => img.type === "miniature")
+            .map((project, index) => (
+              <a
+                href={`/projet/${project.id}`}
+                key={project.id}
+                className="project_link"
+              >
+                <div className="project_card">
+                  <img
+                    src={`${API_BASE_URL}/image/${project.imgTitle}`}
+                    alt={project.alt}
+                    className="main_img"
+                  />
+                  <h3 key={project.title + `_` + index}>{project.title}</h3>
+                </div>
               </a>
-              <h3 key={project.title + `_` + index}>{project.title}</h3>
-            </>
-          ))}
+            ))}
+        </div>
       </section>
       <section className="main_section" id="About">
         <h2>A propos de moi</h2>
-        <img src={avatar} alt="avatar" className="photo_bulle"/>
+        <img src={avatar} alt="avatar" className="photo_bulle" />
         <p>
           Pour en savoir plus: <br />
           <br />
-          Je travaille et vis à Chartres.
+          Seinomarin d'origine, je travaille et vis à Chartres.
           <br />
           Issu d'un cursus scientifique, j'aime bouger découvrir et être
           intellectuellement challengé.
           <br />
-            Je cherche à développer des sites et des applications qui aident les gens dans leur vie de tous les jours afin de faire de la technologie un outil au service des personnes et pas l'inverse.
+          Je cherche à développer des sites et des applications qui aident les
+          gens au quotidien et donc à mettre la technologie au service des
+          personnes.
         </p>
       </section>
     </main>

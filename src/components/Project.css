@@ -1,17 +1,43 @@
-.projet_vues{
-    width: 100%;
+.projet_vues {
+  width: 90%;
+  padding-top: 1rem;
+  border-top: solid 0.5px;
+  margin: 2rem auto;
 }
 
 .project_pics {
-    width: 90%;
-    padding: 1rem 0;
+  width: 90%;
+  padding: 1rem 0;
 }
 
 .project_pics_mobile {
-    max-height: 80vh;
-    padding: 1rem 0;
+  max-height: 70vh;
+  padding: 1rem 0;
+}
+
+.project_maininfos {
+    margin: 1rem 0;
+    padding: 1rem;
 }
 
 .arrow_icon {
-    width: 50%;
+  width: 25%;
+}
+
+@media only screen and (min-width: 1025px) {
+  .pics_container_mobile  {
+    display: flex !important;
+    flex-flow: row wrap !important;
+    justify-content: space-around !important;
+  }
+  .arrow_icon {
+    width:20%;
+  }
+
+  .project_maininfos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
 }
