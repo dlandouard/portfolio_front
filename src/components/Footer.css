@@ -1,0 +1,26 @@
+.footerAll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1em;
+}
+
+.footerContact {
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    width: 100%;
+    padding: 2em 0 1em 0;
+    background: rgba(44, 44, 44, 0.9);
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+@media only screen and (min-width: 1025px) {
+  .footerContact img {
+    width: 120%;
+  }
+  .toUpperPage img{
+    width: 120%;
+  }
+}

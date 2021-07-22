@@ -1,0 +1,20 @@
+#menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(44, 44, 44, 0.7);
+    min-height: 2em;
+    width: 100%;
+    position: fixed;
+    padding: 0.5em 0
+}
+
+.nav{
+    color: rgba(0, 255, 200, 0.692);
+    font-weight: bold;
+}
+
+.nav:hover{
+    color: rgb(243, 70, 70);
+    border-bottom: solid blue;
+}
