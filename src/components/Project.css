@@ -1,7 +1,12 @@
+#projet_description {
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
 .projet_vues {
   width: 90%;
   padding-top: 1rem;
-  border-top: solid 0.5px;
+  border-bottom: solid 0.5px;
   margin: 2rem auto;
 }
 
