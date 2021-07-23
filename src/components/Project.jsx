@@ -35,6 +35,10 @@ function Project() {
           </a>
         </div>
       </section>
+      <div id="projet_description">
+        <h2>Description</h2>
+        <p>{projToShow ? projToShow[0].description : false}</p>
+      </div>
       <section>
         <h2>Quelques visuels</h2>
         <div className="projet_vues">
